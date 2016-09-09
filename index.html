@@ -22,7 +22,7 @@
           <div id='input-parent'>
             <!-- Player's guess input, and submit button -->
             <input id="input-player" name="number" placeholder="#" maxlength="3" autofocus>
-            <button id="submit" class="btn btn-success" name="submit">Go!</button>
+            <button id="submit" class="btn btn-success disableGameOver" disabled name="submit">Go!</button>
           </div>
 
           <div id='guesses'>
@@ -38,8 +38,8 @@
 
           <div id="menu-btns">
             <!-- reset and hint buttons -->
-            <button class="btn btn-danger" name="reset">Reset</button>
-            <button class="btn btn-warning" name="hint">Hint</button>
+            <button class="btn btn-danger" id="reset">Reset</button>
+            <button class="btn btn-warning disableGameOver" disabled id="hint">Hint</button>
           </div>
         </div>
       </div>
@@ -64,5 +64,7 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="GuessingGame-Part2/GuessingGame.js"></script>
   </body>
 </html>
